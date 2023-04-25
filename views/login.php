@@ -5,7 +5,7 @@ include_once("../views/layout/header.php");
 <main>
     <div class="layout">
         <div class="container">
-            <form action="../controllers/login.php" method="POST">
+            <form action="../controllers/login.php" method="POST" id="loginForm">
                 <div class="align">
                     <label for="email">E-mail: </label>
                     <input type="email" name="email" id="email">

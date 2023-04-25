@@ -46,6 +46,7 @@ include_once("../views/layout/header.php");
                                         ?>
                     </p>
                 </div>
+                <br>
                 <div class="align">
                     <label for="confirmPassword">Confirmez le mot de passe: </label>
                     <input type="password" name="confirmPassword" id="confirmPassword">
@@ -108,3 +109,6 @@ include_once("../views/layout/header.php");
     </div>
     </form>
 </main>
+<?php
+include_once("../views/layout/footer.php")
+?>

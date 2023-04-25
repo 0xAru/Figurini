@@ -3,6 +3,10 @@ body {
     font-family: 'Lobster Two', cursive;
     color: rgb(53, 52, 53);
     background-color: #212E53;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
 header {
@@ -15,7 +19,7 @@ header {
 header>p {
     font-size: 2em;
     letter-spacing: 0.01em;
-    margin-left: 9em;
+    margin-left: 12em;
 }
 
 .logo {
@@ -79,7 +83,7 @@ nav .nav-list .nav-item .nav-link:hover:after {
 
 .container {
     display: flex;
-    margin-top: 2em;
+    margin: 2em auto;
     padding: 2em 2em 2em 3em;
     width: 25em;
     border-radius: 20px;
@@ -114,10 +118,6 @@ small {
     left: 2em;
 }
 
-form {
-    width: 17em;
-}
-
 .align {
     display: flex;
     justify-content: end;
@@ -126,6 +126,15 @@ form {
 .center {
     position: relative;
     left: 47%;
+}
+
+.buttonDash {
+    position: relative;
+    left: 37%;
+}
+
+.margin {
+    margin: 0em 10em;
 }
 
 .forgot {
@@ -137,6 +146,10 @@ form {
 
 label {
     padding-right: 1em;
+}
+
+#loginForm {
+    width: 17em;
 }
 
 .wrapper {
@@ -164,7 +177,7 @@ button {
     position: relative;
     padding: 0px;
     overflow: hidden;
-    transition: all .5s;
+    transition: all 0.5s;
     box-shadow: 0px 1px 2px rgba(0, 0, 0, .2);
 }
 
@@ -329,8 +342,6 @@ footer{
     align-items: center;
     padding-top: 1em;
     background: linear-gradient(to left, #4A919E, #BED3C3 100%);
-    position:absolute;
-    bottom: 0;
     width: 100%;
 }
 
@@ -361,7 +372,7 @@ footer .logofooter {
 }
 
 .links {
-    color: black;
+    color: rgb(53, 52, 53);;
     font-size: large;
 }
 
@@ -379,11 +390,36 @@ footer .logofooter {
 
 .linkList li a {
     text-decoration: none;
-    color: black;
+    color: rgb(53, 52, 53);;
 }
 
 .apropos {
     font-size: larger;
     font-weight: bold;
     text-align: center;
+}
+
+.boxContainer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.box {
+    background-color: #4A919E;
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 20em;
+    text-align: center;
+    padding: 0.5em 0;
+}
+
+.box>h3,p {
+    margin: 0;
+}
+
+.boxLink {
+    text-decoration: none;
+    color: rgb(53, 52, 53);;
+    margin-right: 2em;
+    margin-top: 2em;
 }

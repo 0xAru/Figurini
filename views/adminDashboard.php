@@ -25,16 +25,18 @@ include_once("../views/layout/header.php");
                     <input type="text" name="product_price" id="product_price">
                 </div>
                 <br>
-                <div class="center">
-                    <button type="submit">Envoyer</button>
+                <div class="buttonDash">
+                    <button type="submit">Envoyer
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
                 </div>
             </form>
         </div>
     </div>
 </main>
-
-<button type="submit">Envoyer</button>
-
 <?php
 include_once("../views/layout/footer.php")
 ?>

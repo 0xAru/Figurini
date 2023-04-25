@@ -25,6 +25,9 @@
                     <a href="../views/login.php" class="nav-link">Connexion</a>
                 </li>
                 <li class="nav-item">
+                    <a href="../views/dashboard.php" class="nav-link">Profil</a>
+                </li>
+                <li class="nav-item">
                     <a href="../views/basket.php" class="nav-link"><img src="../assets/images/panier.svg" id="basket"></a>
                 </li>
             </ul>

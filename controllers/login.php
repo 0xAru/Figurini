@@ -35,6 +35,7 @@ if(!empty($email) && !empty($password)){
     $sth->execute([$email]); 
     $user = $sth->fetch();
     if (password_verify($password, $user['user_password'])) {
+        $_SESSION["user_id"] = $user["id"];
         if($user["user_role"] == 1){
             header("Location: ../views/adminDashboard");
         }else{

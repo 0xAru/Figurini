@@ -76,3 +76,5 @@ if (!empty($firstname) && !empty($name) && !empty($email) && !empty($hash) && !e
 
     header("Location: ../views/login.php");
 }
+
+
