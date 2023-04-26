@@ -16,6 +16,10 @@ header {
     background: linear-gradient(to left, #BED3C3, #4A919E 60%);
 }
 
+header>h1 {
+    padding: 0;
+}
+
 header>p {
     font-size: 2em;
     letter-spacing: 0.01em;
@@ -28,8 +32,8 @@ header>p {
     padding-left: 0.5em;
 }
 
-#basket {
-    width: 1.5em;
+.mini {
+    width: 2rem;
 }
 
 h1 {
@@ -128,13 +132,13 @@ small {
     left: 47%;
 }
 
+.margin {
+    margin: 0em 10em;
+}
+
 .buttonDash {
     position: relative;
     left: 37%;
-}
-
-.margin {
-    margin: 0em 10em;
 }
 
 .forgot {
@@ -293,6 +297,30 @@ button:hover span {
     margin-bottom: 5em;
 }
 
+.product_card {
+    width: 20em;
+    background-color: white;
+    border-radius: 20px;
+    padding: 1em 2em;
+    margin: 2em 4em;
+    box-shadow: rgba(224, 224, 224, 0.20) 0px 54px 55px, rgba(224, 224, 224, 0.10) 0px -12px 30px, rgb(224, 224, 224, 0.10) 0px 4px 6px, rgb(224, 224, 224, 0.15) 0px 12px 13px, rgb(224, 224, 224, 0.09) 0px -3px 5px;
+}
+
+.selected_product {
+    width: 25em;
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 20px;
+    padding: 1em 2em;
+    margin: 2em 4em;
+}
+
+.mainShop {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .mainTOS {
     display: flex;
     justify-content: center;
@@ -323,6 +351,10 @@ strong {
     text-decoration: underline;
 }
 
+.underline {
+    text-decoration: underline;
+}
+
 .chevronUp {
     margin-bottom: 5vh;
     position: sticky;
@@ -340,7 +372,6 @@ strong {
 footer{
     display: flex;
     align-items: center;
-    padding-top: 1em;
     background: linear-gradient(to left, #4A919E, #BED3C3 100%);
     width: 100%;
 }
@@ -422,4 +453,28 @@ footer .logofooter {
     color: rgb(53, 52, 53);;
     margin-right: 2em;
     margin-top: 2em;
+}
+
+.product_image {
+    width: 100%;
+    min-height: 481px;
+}
+
+.price_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.5em;
+}
+
+.desc_link {
+    color: rgba(2, 2, 225, 0.887);
+}
+
+.desc_link:visited {
+    color: rgba(2, 2, 225, 0.887);
+}
+
+.product_desc {
+    min-height: 80px;
 }

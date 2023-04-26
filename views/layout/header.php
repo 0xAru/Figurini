@@ -18,6 +18,9 @@
         <p>Des figurines uniques pour une collection exceptionnelle</p>
         <nav>
             <ul class="nav-list">
+            <li class="nav-item">
+                    <a href="../views/shop.php" class="nav-link">Boutique</a>
+                </li>
                 <li class="nav-item">
                     <a href="../views/subscribe.php" class="nav-link">Inscription</a>
                 </li>
@@ -28,7 +31,7 @@
                     <a href="../views/dashboard.php" class="nav-link">Profil</a>
                 </li>
                 <li class="nav-item">
-                    <a href="../views/basket.php" class="nav-link"><img src="../assets/images/panier.svg" id="basket"></a>
+                    <a href="../views/basket.php" class="nav-link"><img src="../assets/images/panier.svg" class="mini"></a>
                 </li>
             </ul>
         </nav>
