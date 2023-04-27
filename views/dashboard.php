@@ -18,7 +18,7 @@ include_once("../views/layout/header.php");
         <a href="../views/adress.php" class="boxLink">
             <div class="box">
                 <h3>Mes adresses</h3>
-                <p><small>Modifier le adresses et les préférences de livraisons</small></p>
+                <p><small>Modifier les adresses et les préférences de livraisons</small></p>
             </div>
         </a>
         <a href="../views/sécurity.php" class="boxLink">

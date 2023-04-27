@@ -4,6 +4,7 @@ require("../controllers/shop.php");
 ?>
 <main class= "mainShop">
     <?php
+    //récupération et affichage des produits de la table products
     foreach ($products as $product) {
        echo"<div class='product_card'>
                 <div>
@@ -20,7 +21,7 @@ require("../controllers/shop.php");
                         <br>
                 <div class='price_container'>
                     <p><strong>Prix:</strong> " . $product['product_price'] . "</p>
-                    <a href='#'><img src='../assets/images/ajouter-un-bouton.png' class='mini' title='Ajouter au panier'></a>
+                    <a href='./basket.php?id=". $product['product_id'] . "'><img src='../assets/images/ajouter-un-bouton.png' class='mini' title='Ajouter au panier'></a>
                 </div>
                 </div>
             </div>";

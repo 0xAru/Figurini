@@ -79,6 +79,9 @@ nav .nav-list .nav-item .nav-link:hover:after {
     background: black;
 }
 
+.flex {
+    display: flex;
+}
 
 .layout {
     display: flex;
@@ -297,6 +300,15 @@ button:hover span {
     margin-bottom: 5em;
 }
 
+.basketContainer{
+    width: 40em;
+    margin: 2em auto;
+    padding: 2em 2em 2em 3em;
+    background-color: rgb(222, 221, 221);
+    box-shadow: rgba(224, 224, 224, 0.20) 0px 54px 55px, rgba(224, 224, 224, 0.10) 0px -12px 30px, rgb(224, 224, 224, 0.10) 0px 4px 6px, rgb(224, 224, 224, 0.15) 0px 12px 13px, rgb(224, 224, 224, 0.09) 0px -3px 5px;
+    border-radius: 20px;
+}
+
 .product_card {
     width: 20em;
     background-color: white;
@@ -460,6 +472,12 @@ footer .logofooter {
     min-height: 481px;
 }
 
+.basket_image {
+    width: 25%;
+    height: auto;
+    margin-right: 2em;
+}
+
 .price_container {
     display: flex;
     justify-content: space-between;
@@ -477,4 +495,29 @@ footer .logofooter {
 
 .product_desc {
     min-height: 80px;
+}
+
+.close {
+    position: relative;
+    width: 2.5em;
+    left: 17em;
+    top: 0.60em;
+}
+
+.order_card {
+    width: 50em;
+    background-color: white;
+    border-radius: 20px;
+    padding: 1em 2em;
+    margin: 2em 4em;
+    box-shadow: rgba(224, 224, 224, 0.20) 0px 54px 55px, rgba(224, 224, 224, 0.10) 0px -12px 30px, rgb(224, 224, 224, 0.10) 0px 4px 6px, rgb(224, 224, 224, 0.15) 0px 12px 13px, rgb(224, 224, 224, 0.09) 0px -3px 5px;
+}
+
+.order_image{
+        width: 100%;
+}
+
+.order_container {
+    display: flex;
+    justify-content: center;
 }

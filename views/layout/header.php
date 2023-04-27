@@ -15,7 +15,6 @@
 <body>
     <header>
         <h1><a href="../../index.php"><img src="../assets/images/logo_figurini.png" class="logo"></a></h1>
-        <p>Des figurines uniques pour une collection exceptionnelle</p>
         <nav>
             <ul class="nav-list">
             <li class="nav-item">
