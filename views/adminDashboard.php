@@ -2,6 +2,7 @@
 include_once("../views/layout/header.php");
 ?>
 <main>
+    <h1>Interface administrateur</h1>
     <div class="layout">
         <div class="container">
             <form action="../controllers/adminDashboard.php" method="POST" enctype="multipart/form-data">

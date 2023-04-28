@@ -1,6 +1,11 @@
 <?php
 include_once("bdd.php");
 
+if(empty($_SESSION['user_id'])){
+    header("Location: ../views/login.php");
+    die;
+}
+
 if(!empty($_GET["id"])){
     $product_id = $_GET["id"];
 
@@ -9,4 +14,5 @@ if(!empty($_GET["id"])){
     $sth->execute([$product_id]);
     $product = $sth->fetch();
 }
+
 ?>

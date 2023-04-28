@@ -5,7 +5,10 @@ include_once("../views/layout/header.php");
 <main>
     <div class="layout">
         <div class="container">
-            <form action="../controllers/login.php" method="POST" id="loginForm">
+            <form action="../controllers/login.php" method="POST" class="loginForm">
+            <div class="pad">
+            <a href="../views/subscribe.php" class="forgot center">Nouveau sur le site ?</a>
+            </div>
                 <div class="align">
                     <label for="email">E-mail: </label>
                     <input type="email" name="email" id="email">

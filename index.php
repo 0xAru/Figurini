@@ -1,8 +1,10 @@
 <?php
 session_start();
-include_once("views/layout/header.php");
+$isHome = true;
+include_once("./views/layout/header.php");
+
 ?>
-<main>
+<main class="mainContainer">
     <div>
         <h2>Figurini</h2>
         <p>Bienvenue sur Figurini, votre boutique en ligne de figurines uniques et originales, faites à la main avec passion par nos artisans talentueux. Chez Figurini, nous sommes passionnés par l'art de la figurine et nous croyons que chaque pièce que nous créons est une œuvre d'art unique en son genre. Nous sommes fiers de proposer une large sélection de figurines de haute qualité, avec des styles et des thèmes variés pour répondre à tous les goûts et toutes les envies.

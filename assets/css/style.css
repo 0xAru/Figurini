@@ -79,6 +79,20 @@ nav .nav-list .nav-item .nav-link:hover:after {
     background: black;
 }
 
+main>h1 {
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.pad {
+    padding-bottom: 1.5em;
+}
+#padleft {
+    padding-left: 7em;
+}
+
+
 .flex {
     display: flex;
 }
@@ -155,7 +169,7 @@ label {
     padding-right: 1em;
 }
 
-#loginForm {
+.loginForm {
     width: 17em;
 }
 

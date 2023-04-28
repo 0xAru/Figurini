@@ -4,7 +4,7 @@ include_once("../views/layout/header.php")
 <main>
     <div class="layout">
         <div class="container">
-            <form action="" method="POST">
+            <form action="" method="POST" class="loginForm">
                 <div class="align">
                     <label for="email">E-mail: </label>
                     <input type="email" name="email" id="email">
@@ -23,7 +23,6 @@ include_once("../views/layout/header.php")
     </div>
     </form>
 </main>
-
 <?php
 include_once("../views/layout/footer.php")
 ?>

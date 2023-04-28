@@ -3,6 +3,7 @@ session_start();
 //connexion à la bdd
 include_once("./bdd.php");
 
+
 //gestion des erreurs
 if (!empty($_POST)) {
     $regexMail = "/^[a-zA-Z0-9.%+-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,}$/";
@@ -37,7 +38,7 @@ if(!empty($email) && !empty($password)){
     if (password_verify($password, $user['user_password'])) {
         $_SESSION["user_id"] = $user["id"];
         if($user["user_role"] == 1){
-            header("Location: ../views/adminDashboard");
+            header("Location: ../views/adminDashboard.php");
         }else{
             header("Location: ../views/dashboard.php");
         }

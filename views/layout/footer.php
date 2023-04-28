@@ -12,7 +12,7 @@
                 <div class="links">
                     <p>Liens Rapides:</p>
                     <ul class="linkList">
-                        <li><a href="../../index.php">Accueil</a></li>
+                        <li><a href="../index.php">Accueil</a></li>
                         <li><a href="../views/dashboard.php">Profil</a></li>
                         <li><a href="../views/contact.php">Contact</a></li>
                         <li><a href="../views/aPropos.php">À propos</a></li>

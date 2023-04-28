@@ -7,6 +7,9 @@ include_once("../views/layout/header.php");
     <div class="layout">
         <div class="container">
             <form action="../controllers/subscribe.php" method="POST">
+                <div class="pad layout">
+                    <a href="./login.php" class="forgot" id="padleft">Déjà inscrit?</a>
+                </div>
                 <div class="align">
                     <label for="firstname">Prénom: </label>
                     <input type="text" name="firstname" id="firstname">
