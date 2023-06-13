@@ -1,6 +1,6 @@
 <?php
     $servername = 'localhost';
-    $dbname = 'figurini';
+    $dbname = 'projet-ecommerce';
     $username = 'root';
     $password = '';
 

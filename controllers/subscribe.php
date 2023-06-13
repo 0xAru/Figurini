@@ -26,6 +26,7 @@ if(!preg_match($regexPassword, $_POST["password"])) {
 } 
 
 if ($_POST["password"] == $_POST["confirmPassword"]) {
+    
     $password = $_POST["password"];
 } else {
     $_SESSION["error_passwordTwo"] = "Vos mots de passe ne correspondent pas";
@@ -34,7 +35,7 @@ if ($_POST["password"] == $_POST["confirmPassword"]) {
 
 $regexPostalCode = "/^(([0-8][0-9])|(9[0-5])|(2[ab])|(20)|(21)|(97[12]))[0-9]{3}$/";
 
-if(!preg_match($regexPostalCode, $_POST["postalCode"]) && strlen($_POST["postalCode"]) < 5){
+if(!preg_match($regexPostalCode, $_POST["postalCode"]) || strlen($_POST["postalCode"]) < 5){
     $_SESSION["error_postalCode"] = "Le code postal renseigné est invalide";
     header("Location: ../views/subscribe.php");
 } else {
@@ -54,14 +55,15 @@ if(!preg_match($regexPhone, $_POST["nmbPhone"])) {
 //connexion à la bdd
 include_once("./bdd.php");
 
+
 //preparation de la requête
+$hash = password_hash($password, PASSWORD_DEFAULT);
 if (!empty($firstname) && !empty($name) && !empty($email) && !empty($hash) && !empty($adress) && !empty($postalCode) && !empty($city) && !empty($phone)) {
+ 
     $sth = $conn->prepare("
         INSERT INTO users(user_firstname, user_name, user_email, user_password, user_adress, user_postal_code, user_city, user_phone)
         VALUES(:firstname, :name, :email, :password, :adress, :postalCode, :city, :phone)
         ");
-
-        $hash = password_hash($password, PASSWORD_DEFAULT);
     
     $sth->bindParam(':firstname', $firstname);
     $sth->bindParam(':name', $name);
@@ -75,6 +77,8 @@ if (!empty($firstname) && !empty($name) && !empty($email) && !empty($hash) && !e
     $sth->execute();
 
     header("Location: ../views/login.php");
+}else{
+    header("Location: ../views/subscribe.php");
 }
 
 
