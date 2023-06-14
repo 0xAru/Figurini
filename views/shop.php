@@ -20,7 +20,7 @@ require("../controllers/shop.php");
                         </p>
                         <br>
                 <div class='price_container'>
-                    <p><strong>Prix:</strong> " . $product['product_price'] . "</p>
+                    <p><strong>Prix:</strong> " . $product['product_price'] . "€</p>
                     <a href='./basket.php?id=". $product['product_id'] . "'><img src='../assets/images/ajouter-un-bouton.png' class='mini' title='Ajouter au panier'></a>
                 </div>
                 </div>

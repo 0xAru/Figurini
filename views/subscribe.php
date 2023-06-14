@@ -6,7 +6,7 @@ include_once("../views/layout/header.php");
 <main>
     <div class="layout">
         <div class="container">
-            <form action="../controllers/subscribe.php" method="POST">
+            <form action="../controllers/subscribe.php" method="POST" class="registerForm">
                 <div class="pad layout">
                     <a href="./login.php" class="forgot" id="padleft">Déjà inscrit?</a>
                 </div>
@@ -26,11 +26,12 @@ include_once("../views/layout/header.php");
                 </div>
                 <div class="error">
                     <p class="small"><?php
-                                            if (!empty($_SESSION["error_email"])) {
-                                                echo $_SESSION["error_email"];
-                                                unset($_SESSION["error_email"]);
-                                            }
-                                            ?>
+                                        if (!empty($_SESSION["error_email"])) {
+                                            echo $_SESSION["error_email"];
+                                            unset($_SESSION["error_email"]);
+                                        }
+                                        ?>
+                    </p>
                 </div>
                 <br>
                 <div class="align">
@@ -55,13 +56,13 @@ include_once("../views/layout/header.php");
                     <input type="password" name="confirmPassword" id="confirmPassword">
                 </div>
                 <div class="error">
-                <p class="small mdp"><?php
-                                        if (!empty($_SESSION["error_passwordTwo"])) {
-                                            echo $_SESSION["error_passwordTwo"];
-                                            unset($_SESSION["error_passwordTwo"]);
-                                        }
-                                        ?>
-                                        </div>
+                    <p class="small mdp"><?php
+                                            if (!empty($_SESSION["error_passwordTwo"])) {
+                                                echo $_SESSION["error_passwordTwo"];
+                                                unset($_SESSION["error_passwordTwo"]);
+                                            }
+                                            ?>
+                </div>
                 <br>
                 <div class="align">
                     <label for="adress">Adresse: </label>
@@ -74,11 +75,11 @@ include_once("../views/layout/header.php");
                 </div>
                 <div class="error">
                     <p class="small"><?php
-                                            if (!empty($_SESSION["error_postalCode"])) {
-                                                echo $_SESSION["error_postalCode"];
-                                                unset($_SESSION["error_postalCode"]);
-                                            }
-                                            ?>
+                                        if (!empty($_SESSION["error_postalCode"])) {
+                                            echo $_SESSION["error_postalCode"];
+                                            unset($_SESSION["error_postalCode"]);
+                                        }
+                                        ?>
                 </div>
                 <br>
                 <div class="align">

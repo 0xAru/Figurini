@@ -55,10 +55,23 @@ if(!preg_match($regexPhone, $_POST["nmbPhone"])) {
 //connexion à la bdd
 include_once("./bdd.php");
 
+// Vérification si l'adresse e-mail existe déjà
+$sthCheckEmail = $conn->prepare("SELECT COUNT(*) as count FROM users WHERE user_email = :email");
+$sthCheckEmail->bindParam(':email', $email);
+$sthCheckEmail->execute();
+$result = $sthCheckEmail->fetch(PDO::FETCH_ASSOC);
+
+if ($result['count'] > 0) {
+    $_SESSION["error_email"] = "Un compte avec cette adresse e-mail existe déjà";
+    header("Location: ../views/subscribe.php");
+    exit(); // Terminer le script pour éviter l'exécution du reste du code
+}
 
 //preparation de la requête
-$hash = password_hash($password, PASSWORD_DEFAULT);
-if (!empty($firstname) && !empty($name) && !empty($email) && !empty($hash) && !empty($adress) && !empty($postalCode) && !empty($city) && !empty($phone)) {
+
+$hash = password_hash($_POST["password"], PASSWORD_DEFAULT);
+
+if (!empty($firstname) && !empty($name) && !empty($email) && !empty($_POST["password"]) && !empty($adress) && !empty($postalCode) && !empty($city) && !empty($phone)) {
  
     $sth = $conn->prepare("
         INSERT INTO users(user_firstname, user_name, user_email, user_password, user_adress, user_postal_code, user_city, user_phone)

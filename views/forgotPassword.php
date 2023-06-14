@@ -10,7 +10,7 @@ include_once("../views/layout/header.php")
                     <input type="email" name="email" id="email">
                 </div>
                 <br>
-                <div class="center">
+                <div class="forgotBtn">
                     <button>
                         Envoyer
                         <span></span>
