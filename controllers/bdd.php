@@ -1,7 +1,7 @@
 <?php
     $servername = 'localhost';
     $dbname = 'figurini';
-    $username = 'root';
+    $username = '';
     $password = '';
 
 
