@@ -1,8 +1,8 @@
 <?php
     $servername = 'localhost';
     $dbname = 'figurini';
-    $username = '';
-    $password = '';
+    $username = 'root';
+    $password = 'YES';
 
 
 //On essaie de se connecter
