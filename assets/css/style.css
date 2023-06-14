@@ -14,7 +14,7 @@ header {
     align-items: center;
     justify-content: space-between;
     background: linear-gradient(to left, #BED3C3, #4A919E 60%);
-    padding-left: 17rem;
+    padding: 0 10rem 0 17rem;
 }
 
 header>h1 {
