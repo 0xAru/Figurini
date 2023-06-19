@@ -14,7 +14,7 @@ header {
     align-items: center;
     justify-content: space-between;
     background: linear-gradient(to left, #BED3C3, #4A919E 60%);
-    padding: 0 10rem 0 17rem;
+    padding: 0 260px;
 }
 
 header>h1 {
@@ -327,11 +327,11 @@ button:hover span {
 
 .mainContainer {
     color: white;
-    padding: 0 15em;
+    padding: 0 300px;
     line-height: 2em;
     font-size: larger;
     position: relative;
-    margin-bottom: 5em;
+    margin: 2em 0 5em 0;
 }
 
 .basketContainer {
@@ -558,4 +558,48 @@ p {
 .order_container {
     display: flex;
     justify-content: center;
+}
+
+/* Styles pour les petits écrans */
+@media screen and (max-width: 768px) {
+
+    header {
+        padding: 0 20px;
+    }
+
+    .mainContainer {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+}
+
+/* Styles pour les écrans de taille moyenne */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+    header {
+        padding: 0 20px;
+    }
+
+    .mainContainer {
+        padding: 40px;
+    }
+
+    h2 {
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
 }
